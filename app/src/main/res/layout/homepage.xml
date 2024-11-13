@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/lamanutama">
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="74dp"
+        android:text="Selamat Datang"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sansationbold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="94dp"
+        android:text="Fian"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sansationbold"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="23dp"
+        android:text="Bulan Tanggal, Tahun"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:fontFamily="@font/sansationlight"/>
+
+    <LinearLayout
+        android:id="@+id/historyBox"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/historybox"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sejarah Aktifitas"
+            android:textColor="@color/gray"
+            android:textSize="32sp"
+            android:fontFamily="@font/sansationlight"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distanceBox"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/historyBox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/actbox"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/jrk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saralaregular"
+            android:text="0.0 km"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saralaregular"
+            android:text="Jarak"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeBox"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/historyBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/actbox"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/wkt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saralaregular"
+            android:text="00:00:00"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saralaregular"
+            android:text="Waktu"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stepBox"
+        android:layout_width="354dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="535dp"
+        android:background="@drawable/melangkah"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="275dp"
+            android:src="@drawable/run" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/home"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="homebtn"/>
+
+    <ImageButton
+        android:id="@+id/mapsbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/map"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="profilebtn"/>
+
+    <ImageButton
+        android:id="@+id/profilebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/profile"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="profilebtn"/>
+
+</RelativeLayout>

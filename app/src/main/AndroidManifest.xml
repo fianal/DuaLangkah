@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Izin untuk mengakses lokasi perangkat -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuaLangkah"
+        tools:targetApi="31">
+
+        <!-- Aktivitas halaman profil -->
+        <activity
+            android:name=".ProfilepageActivity"
+            android:exported="false" />
+
+        <!-- Aktivitas halaman peta -->
+        <activity
+            android:name=".MappageActivity"
+            android:exported="false" />
+
+        <!-- Aktivitas halaman utama -->
+        <activity
+            android:name=".HomepageActivity"
+            android:exported="false" />
+
+        <!-- Aktivitas utama aplikasi -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Aktivitas tambahan (MainActivity2) -->
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

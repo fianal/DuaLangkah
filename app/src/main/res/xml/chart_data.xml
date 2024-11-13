@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <chart>
+        <series>
+            <value x="Jan" y="2" />
+            <value x="Feb" y="1" />
+            <value x="Mar" y="3" />
+            <value x="Apr" y="4" />
+            <value x="Mei" y="3" />
+        </series>
+        <title>Aktivitas Mingguan</title>
+        <x-axis>
+            <label>Bulan</label>
+        </x-axis>
+        <y-axis>
+            <label>Aktivitas</label>
+        </y-axis>
+    </chart>
+</PreferenceScreen>

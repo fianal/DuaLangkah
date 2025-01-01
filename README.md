@@ -21,7 +21,7 @@
 
 <h1>UI & UX Dua Langkah</h1>
 
-![gambar](https://github.com/fianal/DuaLangkah/blob/master/Tampilan%20Awal%20DuaLangkah/UI%20%26%20UX.png)
+![gambar](https://github.com/fianal/DuaLangkah/blob/master/Tampilan%20Awal%20DuaLangkah/UiUx.png)
 
 <p>! Peringatan Tampilan-tampilan di atas belum tentu persis dengan aplikasi !</p>
 
